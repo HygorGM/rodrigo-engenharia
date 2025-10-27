@@ -6,7 +6,6 @@
     <ObjetivoSection />
     <ValoresSection />
     <AtendimentosSection />
-    <ServicosSection />
     <DiferencialSection />
     <PortifolioSection />
     <ContatoSection />
@@ -22,7 +21,6 @@ import SobreSection from '~/components/SobreSection.vue'
 import ObjetivoSection from '~/components/ObjetivoSection.vue'
 import ValoresSection from '~/components/ValoresSection.vue'
 import AtendimentosSection from '~/components/AtendimentosSection.vue'
-import ServicosSection from '~/components/ServicosSection.vue'
 import DiferencialSection from '~/components/DiferencialSection.vue'
 import PortifolioSection from '~/components/PortifolioSection.vue'
 import ContatoSection from '~/components/ContatoSection.vue'

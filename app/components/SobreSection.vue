@@ -6,7 +6,6 @@
     aria-label="Seção sobre a empresa"
   >
     <div class="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 grid md:grid-cols-2 gap-10 items-center">
-      <!-- Texto -->
       <div>
         <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
           <span class="text-gray-900 dark:text-white">Quem</span>
@@ -36,16 +35,16 @@
         </p>
       </div>
 
-      <!-- Imagem do lado direito -->
+      <!-- Imagem  -->
       <div class="flex justify-center md:justify-end">
         <div class="relative group rounded-lg overflow-hidden shadow-lg max-w-md transition-transform duration-300">
           <img
-            src=""
+            src="/imagens/engenheiro trabalhando.jpeg"
             alt="Engenheiro civil trabalhando em obra"
             class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out"
             loading="lazy"
           />
-          <!-- Overlay laranja sutil ao passar o mouse -->
+
           <div
             class="absolute inset-0 bg-orange-500/0 group-hover:bg-orange-500/20 transition-colors duration-500 ease-in-out"
           ></div>
@@ -56,7 +55,6 @@
 </template>
 
 <script setup>
-// Sobre.vue — Seção 'Quem Somos' do site de Engenharia Civil
 </script>
 
 <style scoped>

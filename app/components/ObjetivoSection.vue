@@ -1,5 +1,5 @@
 <template>
-  <section id="objetivo" class="bg-gray-50 py-16">
+  <section id="objetivo" class="bg-gray-100 py-16">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold text-gray-900 mb-10">
         Nosso Objetivo

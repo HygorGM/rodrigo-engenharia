@@ -8,13 +8,13 @@
       <!-- Logo -->
       <div class="flex items-center">
         <img
-          src=""
+          src="/imagens/Logo.jpeg"
           alt="Logo da empresa"
-          class="w-14 h-auto object-contain"
+          class="w-20 h-auto object-contain"
         />
       </div>
 
-      <!-- Menu desktop -->
+      <!-- Menu -->
       <nav class="hidden md:flex items-center space-x-6 text-gray-900 font-medium">
         <a href="#hero" class="hover:text-orange-500 transition">Início</a>
         <a href="#sobre" class="hover:text-orange-500 transition">Sobre</a>
@@ -25,7 +25,7 @@
         <a href="#contato" class="hover:text-orange-500 transition">Contato</a>
       </nav>
 
-      <!-- Ícone menu mobile -->
+      <!-- menu mobile -->
       <button
         @click="toggleMenu"
         class="md:hidden text-gray-900 focus:outline-none"
@@ -57,7 +57,7 @@
       </button>
     </div>
 
-    <!-- Menu mobile (dropdown com animação suave) -->
+    <!-- Menu mobile animação-->
     <transition name="slide">
       <div
         v-if="isOpen"
@@ -84,7 +84,7 @@ const closeMenu = () => (isOpen.value = false)
 </script>
 
 <style scoped>
-/* Animação suave do dropdown mobile */
+/* Animação mobile */
 .slide-enter-active,
 .slide-leave-active {
   transition: all 0.3s ease;
