@@ -35,7 +35,6 @@
         </p>
       </div>
 
-      <!-- Imagem  -->
       <div class="flex justify-center md:justify-end">
         <div class="relative group rounded-lg overflow-hidden shadow-lg max-w-md transition-transform duration-300">
           <img
@@ -43,11 +42,11 @@
             alt="Engenheiro civil trabalhando em obra"
             class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out"
             loading="lazy"
-          />
+          >
 
           <div
             class="absolute inset-0 bg-orange-500/0 group-hover:bg-orange-500/20 transition-colors duration-500 ease-in-out"
-          ></div>
+          />
         </div>
       </div>
     </div>

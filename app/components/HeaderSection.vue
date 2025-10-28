@@ -5,30 +5,40 @@
     <div
       class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4"
     >
-      <!-- Logo -->
       <div class="flex items-center">
         <img
           src="/imagens/Logo.jpeg"
           alt="Logo da empresa"
           class="w-20 h-auto object-contain"
-        />
+        >
       </div>
 
-      <!-- Menu -->
       <nav class="hidden md:flex items-center space-x-6 text-gray-900 font-medium">
-        <a href="#hero" class="hover:text-orange-500 transition">Início</a>
-        <a href="#sobre" class="hover:text-orange-500 transition">Sobre</a>
-        <a href="#objetivo" class="hover:text-orange-500 transition">Objetivos</a>
-        <a href="#valores" class="hover:text-orange-500 transition">Valores</a>
-        <a href="#servicos" class="hover:text-orange-500 transition">Serviços</a>
-        <a href="#portifolio" class="hover:text-orange-500 transition">Portfólio</a>
-        <a href="#contato" class="hover:text-orange-500 transition">Contato</a>
+        <a
+          href="#inicio"
+          class="hover:text-orange-500 transition"
+        >Início</a>
+        <a
+          href="#sobre"
+          class="hover:text-orange-500 transition"
+        >Sobre</a>
+        <a
+          href="#servicos"
+          class="hover:text-orange-500 transition"
+        >Serviços</a>
+        <a
+          href="#portifolio"
+          class="hover:text-orange-500 transition"
+        >Portfólio</a>
+        <a
+          href="#contatos"
+          class="hover:text-orange-500 transition"
+        >Contato</a>
       </nav>
 
-      <!-- menu mobile -->
       <button
-        @click="toggleMenu"
         class="md:hidden text-gray-900 focus:outline-none"
+        @click="toggleMenu"
       >
         <svg
           v-if="!isOpen"
@@ -39,9 +49,13 @@
           stroke="currentColor"
           stroke-width="2"
         >
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16" />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
         </svg>
+
         <svg
           v-else
           xmlns="http://www.w3.org/2000/svg"
@@ -51,25 +65,55 @@
           stroke="currentColor"
           stroke-width="2"
         >
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M6 18L18 6M6 6l12 12" />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
         </svg>
       </button>
     </div>
 
-    <!-- Menu mobile animação-->
     <transition name="slide">
       <div
         v-if="isOpen"
-        class="md:hidden bg-white shadow-inner px-6 py-4 text-gray-900 font-medium space-y-4"
+        class="md:hidden bg-white shadow-inner px-6 py-8 text-gray-900 font-medium flex flex-col items-center justify-center space-y-4 text-center"
       >
-        <a href="#hero" class="block hover:text-orange-500" @click="closeMenu">Início</a>
-        <a href="#sobre" class="block hover:text-orange-500" @click="closeMenu">Sobre</a>
-        <a href="#objetivo" class="block hover:text-orange-500" @click="closeMenu">Objetivos</a>
-        <a href="#valores" class="block hover:text-orange-500" @click="closeMenu">Valores</a>
-        <a href="#servicos" class="block hover:text-orange-500" @click="closeMenu">Serviços</a>
-        <a href="#portifolio" class="block hover:text-orange-500" @click="closeMenu">Portfólio</a>
-        <a href="#contato" class="block hover:text-orange-500" @click="closeMenu">Contato</a>
+        <a
+          href="#hero"
+          class="block hover:text-orange-500"
+          @click="closeMenu"
+        >Início</a>
+        <a
+          href="#sobre"
+          class="block hover:text-orange-500"
+          @click="closeMenu"
+        >Sobre</a>
+        <a
+          href="#objetivo"
+          class="block hover:text-orange-500"
+          @click="closeMenu"
+        >Objetivos</a>
+        <a
+          href="#valores"
+          class="block hover:text-orange-500"
+          @click="closeMenu"
+        >Valores</a>
+        <a
+          href="#servicos"
+          class="block hover:text-orange-500"
+          @click="closeMenu"
+        >Serviços</a>
+        <a
+          href="#portifolio"
+          class="block hover:text-orange-500"
+          @click="closeMenu"
+        >Portfólio</a>
+        <a
+          href="#contato"
+          class="block hover:text-orange-500"
+          @click="closeMenu"
+        >Contato</a>
       </div>
     </transition>
   </header>
@@ -79,12 +123,29 @@
 import { ref } from 'vue'
 
 const isOpen = ref(false)
+const isVisible = ref(true)
+
+let lastScroll = 0
+
 const toggleMenu = () => (isOpen.value = !isOpen.value)
 const closeMenu = () => (isOpen.value = false)
+const handleScroll = () => {
+  const currentScroll = window.scrollY
+  if (currentScroll <= 0) {
+    isVisible.value = true
+  } else if (currentScroll > lastScroll) {
+    isVisible.value = false
+  } else {
+    isVisible.value = true
+  }
+  lastScroll = currentScroll
+}
+
+onMounted(() => window.addEventListener('scroll', handleScroll))
+onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 </script>
 
 <style scoped>
-/* Animação mobile */
 .slide-enter-active,
 .slide-leave-active {
   transition: all 0.3s ease;

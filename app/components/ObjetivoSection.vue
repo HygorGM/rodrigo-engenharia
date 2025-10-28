@@ -1,9 +1,15 @@
 <template>
-  <section id="objetivo" class="bg-gray-100 py-16">
+  <section
+    id="objetivos"
+    class="bg-gray-100 pt-1 pb-16"
+  >
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-gray-900 mb-10">
-        Nosso Objetivo
-      </h2>
+      <div class="text-center my-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
+          Nossos Objetivos
+        </h2>
+        <div class="w-20 h-[3px] bg-orange-500 mx-auto mt-2 rounded-full" />
+      </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div

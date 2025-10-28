@@ -19,7 +19,6 @@
 </template>
 
 <style scoped>
-/* Animação mais suave que o padrão "animate-pulse" */
 @keyframes pulse-slow {
   0%, 100% {
     transform: scale(1);
