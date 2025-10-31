@@ -51,7 +51,7 @@
         class="flex items-center justify-center bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300"
       >
         <img
-          src="/imagens/correios.jpeg"
+          src="/imagens/correios.png"
           alt="Logo empresa 4"
           class="object-contain max-h-16"
         >
