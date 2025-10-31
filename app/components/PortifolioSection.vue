@@ -21,7 +21,7 @@
         class="flex items-center justify-center bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300"
       >
         <img
-          src="/imagens/academia-fitmusic.jpeg"
+          src="/imagens/academia-fitmusic.png"
           alt="Logo empresa 1"
           class="object-contain max-h-16"
         >
@@ -31,7 +31,7 @@
         class="flex items-center justify-center bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300"
       >
         <img
-          src="/imagens/ad-campinas.jpeg"
+          src="/imagens/ad-campinas.png"
           alt="Logo empresa 2"
           class="object-contain max-h-16"
         >
@@ -41,7 +41,7 @@
         class="flex items-center justify-center bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300"
       >
         <img
-          src="/imagens/casas-mh.jpeg"
+          src="/imagens/casas-mh.png"
           alt="Logo empresa 3"
           class="object-contain max-h-16"
         >
@@ -61,7 +61,7 @@
         class="flex items-center justify-center bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300"
       >
         <img
-          src="/imagens/imper-laje.jpeg"
+          src="/imagens/imper-laje.png"
           alt="Logo empresa 5"
           class="object-contain max-h-16"
         >
@@ -81,7 +81,7 @@
         class="flex items-center justify-center bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300"
       >
         <img
-          src="/imagens/jn&j.jpeg"
+          src="/imagens/jn&j.png"
           alt="Logo empresa 7"
           class="object-contain max-h-16"
         >
@@ -91,7 +91,7 @@
         class="flex items-center justify-center bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300"
       >
         <img
-          src="/imagens/mjc.jpeg"
+          src="/imagens/mjc.png"
           alt="Logo empresa 8"
           class="object-contain max-h-16"
         >
@@ -101,7 +101,7 @@
         class="flex items-center justify-center bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300"
       >
         <img
-          src="/imagens/pormade-portas.jpeg"
+          src="/imagens/pormade-portas.png"
           alt="Logo empresa 9"
           class="object-contain max-h-16"
         >
@@ -111,7 +111,7 @@
         class="flex items-center justify-center bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300"
       >
         <img
-          src="/imagens/rezende-arantes.jpeg"
+          src="/imagens/rezende-arantes.png"
           alt="Logo empresa 10"
           class="object-contain max-h-16"
         >
@@ -121,7 +121,7 @@
         class="flex items-center justify-center bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 duration-300"
       >
         <img
-          src="/imagens/terral-incorporadora.jpeg"
+          src="/imagens/terral-incorporadora.png"
           alt="Logo empresa 11"
           class="object-contain max-h-16"
         >

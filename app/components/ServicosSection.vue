@@ -13,7 +13,7 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
         <div
-          class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.04] flex flex-col items-center text-center p-8 hover:bg-gray-50"
+          class="bg-white rounded-2xl shadow-lg group-hover:shadow-2xl group transition-all duration-300 hover:scale-[1.04] flex flex-col items-center text-center p-8 hover:bg-gray-50"
         >
           <div class="relative w-full flex justify-center mb-6">
             <img
