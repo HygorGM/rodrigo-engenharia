@@ -132,6 +132,6 @@
 
 <style scoped>
 section {
-  scroll-margin-top: 80px; /* caso o header seja fixo */
+  scroll-margin-top: 80px;
 }
 </style>

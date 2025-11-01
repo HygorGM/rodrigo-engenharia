@@ -6,7 +6,6 @@
     ]"
   >
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-      <!-- Logo -->
       <div class="flex items-center">
         <img
           src="/imagens/Logo.png"
@@ -15,7 +14,6 @@
         >
       </div>
 
-      <!-- Navegação desktop -->
       <nav class="hidden md:flex items-center space-x-6 text-gray-900 font-medium">
         <a href="#inicio" class="hover:text-orange-500 transition">Início</a>
         <a href="#sobre" class="hover:text-orange-500 transition">Sobre</a>
@@ -24,7 +22,6 @@
         <a href="#contatos" class="hover:text-orange-500 transition">Contato</a>
       </nav>
 
-      <!-- Botão mobile -->
       <button
         class="md:hidden text-gray-900 focus:outline-none"
         @click="toggleMenu"
@@ -54,7 +51,6 @@
       </button>
     </div>
 
-    <!-- Menu mobile -->
     <transition name="slide">
       <div
         v-if="isOpen"
@@ -87,10 +83,8 @@ const handleScroll = () => {
   if (currentScroll <= 0) {
     isVisible.value = true
   } else if (currentScroll > lastScroll) {
-    // Rolando para baixo → esconder header
     isVisible.value = false
   } else {
-    // Rolando para cima → mostrar header
     isVisible.value = true
   }
   lastScroll = currentScroll

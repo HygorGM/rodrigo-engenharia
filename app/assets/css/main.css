@@ -1,42 +1,31 @@
-/* ===========================
-   🔹 Importações base
-   =========================== */
+
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-/* ===========================
-   🎨 Tema personalizado
-   =========================== */
 @theme {
-  /* Tipografia */
+
   --font-sans: 'Public Sans', sans-serif;
 
-  /* Cores principais - Laranja */
   --color-primary-50: #FFF7E6;
   --color-primary-100: #FFE0B3;
   --color-primary-200: #FFC266;
   --color-primary-300: #FFAD33;
-  --color-primary-400: #FF9900; /* principal */
+  --color-primary-400: #FF9900; 
   --color-primary-500: #E68900;
-  --color-primary-600: #CC7A00; /* hover */
+  --color-primary-600: #CC7A00; 
   --color-primary-700: #A86200;
   --color-primary-800: #804D00;
   --color-primary-900: #663E00;
 
-  /* Neutros e de apoio */
   --color-white: #FFFFFF;
   --color-gray-50: #F5F5F5;
   --color-gray-100: #E5E5E5;
   --color-gray-500: #999999;
   --color-gray-900: #1F1F1F;
 
-  /* Azul técnico */
   --color-accent-500: #005B8F;
 }
 
-/* ===========================
-   🧱 Estilos globais
-   =========================== */
 html {
   scroll-behavior: smooth;
 }
@@ -45,9 +34,6 @@ body {
   @apply bg-white text-gray-900 font-sans antialiased;
 }
 
-/* ===========================
-   🔗 Links e botões
-   =========================== */
 a {
   color: var(--color-primary-400);
   transition: color 0.3s ease;
@@ -65,9 +51,6 @@ a:hover {
   background-color: var(--color-primary-600);
 }
 
-/* ===========================
-   🧩 Seções
-   =========================== */
 .section-light {
   background-color: var(--color-white);
 }
