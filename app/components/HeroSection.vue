@@ -5,17 +5,23 @@
     role="region"
     aria-label="Apresentação do site de Engenharia Civil"
   >
+    <!-- Imagem de fundo -->
     <img
       src="/imagens/Engenheiros de costas 1.png"
       alt="Engenheiros de costas"
-      class="w-full h-auto object-cover"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+
+    <!-- Camada de escurecimento -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <!-- Conteúdo principal -->
+    <div
+      class="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-10 lg:px-16 flex items-center min-h-[calc(100vh-5rem)]"
     >
-
-    <div class="absolute inset-0 bg-black/40" />
-
-    <div class="absolute z-10 w-full max-w-7xl mx-auto px-8 md:px-10 lg:px-16">
+      <!-- Ajuste '5rem' conforme a altura do header -->
       <div class="max-w-xl">
-        <h1 class="text-4xl md:text-4xl lg:text-4xl font-bold text-white leading-tight">
+        <h1 class="text-4xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
           Construindo Excelência, Transformando Projetos.
         </h1>
         <p class="mt-4 text-lg text-gray-200">
